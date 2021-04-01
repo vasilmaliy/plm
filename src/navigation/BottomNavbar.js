@@ -1,19 +1,18 @@
 import * as React from 'react';
 import {BottomNavigation, Text} from 'react-native-paper';
 import Greeting from '../components/Greeting'
-
-const AlbumsRoute = () => <Text>Albums</Text>;
+import Lab2 from '../components/Lab2'
 
 const BottomNavbar = () => {
     const [index, setIndex] = React.useState(0);
     const [routes] = React.useState([
       { key: 'general', title: 'General', icon: 'home' },
-      { key: 'item2', title: 'item2' },
+      { key: 'lab2', title: 'CoordinateVM',  icon: 'dog' },
     ]);
   
     const renderScene = BottomNavigation.SceneMap({
       general: Greeting,
-      item2: AlbumsRoute,
+      lab2: Lab2,
     });
   
     return (

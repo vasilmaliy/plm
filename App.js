@@ -5,7 +5,9 @@ import BottomNavbar  from './src/navigation/BottomNavbar';
 export default function App() {
   return (
     <View style={styles.container}>
+      
       <BottomNavbar/>
+
     </View>
   );
 }

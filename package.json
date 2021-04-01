@@ -1,7 +1,7 @@
 {
   "main": "node_modules/expo/AppEntry.js",
   "name": "react-native-labs",
-  "description": "React Native labs for iOS + Android",
+  "description": "ua.kpi.comsys.8211",
   "author": "Maliy Vasil <vasil.maliy14@gmail.com>",
   "version": "1.0.0",
   "scripts": {
