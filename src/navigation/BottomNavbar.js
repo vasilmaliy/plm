@@ -1,18 +1,21 @@
 import * as React from 'react';
 import {BottomNavigation, Text} from 'react-native-paper';
 import Greeting from '../components/Greeting'
-import Lab2 from '../components/Lab2'
+import DrawingViewController from '../components/DrawingViewController'
+import * as ScreenOrientation from 'expo-screen-orientation'
 
 const BottomNavbar = () => {
     const [index, setIndex] = React.useState(0);
     const [routes] = React.useState([
       { key: 'general', title: 'General', icon: 'home' },
-      { key: 'lab2', title: 'CoordinateVM',  icon: 'dog' },
+      { key: 'drawing', title: 'Drawing',  icon: 'pencil' },
     ]);
-  
+
+    ScreenOrientation.unlockAsync()
+
     const renderScene = BottomNavigation.SceneMap({
       general: Greeting,
-      lab2: Lab2,
+      drawing: DrawingViewController,
     });
   
     return (
