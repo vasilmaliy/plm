@@ -17,7 +17,7 @@ function Chart(props) {
     }    
 
     return (
-        <VictoryChart polar={state.polar} height={400} padding={10}>
+        <VictoryChart polar={state.polar} height={200} padding={10}>
           <VictoryLine
             interpolation={state.interpolation} data={data}
             style={{ data: { stroke: "#c43a31" } }}

@@ -1,6 +1,5 @@
 import React,  { useState } from "react";
-import { Text, StyleSheet, View } from "react-native";
-import CoordinateVM from "./CoordinateVM";
+import { Text, StyleSheet, View, StatusBar } from "react-native";
 import DonutChart from "./DonutChart";
 import SwitchSelector from "react-native-switch-selector";
 import Chart from "./Chart";
@@ -15,14 +14,18 @@ const DrawingViewController = (props) => {
   const [graph, setGraph] = useState(<Chart/>);
 
   return (
-    <View style={styles.generalContainer}>
-      <SwitchSelector
+    <>
+    <View style={{ paddingTop: StatusBar.currentHeight }}>
+      <SwitchSelector style={{marginTop: 0}}
         options={options}
         initial={0}
         onPress={(value) => value == 'schedule' ? setGraph(<Chart/>) : setGraph(<DonutChart/>)}
       />
-      {graph}
     </View>
+    <View style={styles.generalContainer}>
+    {graph}
+    </View>
+    </>
   );
 };
 

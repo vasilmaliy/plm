@@ -12,8 +12,8 @@ const DonutChart = (props) => {
             { y: 10, x: ' '},
             { y: 5, x: ' '},
         ]}
-        width={400}
-        height={400}
+        width={200}
+        height={200}
         innerRadius={70}
         style={{
         labels: {
