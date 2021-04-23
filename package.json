@@ -23,6 +23,7 @@
     "react-native-svg": "^12.1.1",
     "react-native-switch-selector": "^2.1.4",
     "react-native-web": "~0.13.12",
+    "rn-fetch-blob": "^0.12.0",
     "victory-native": "^35.3.2"
   },
   "devDependencies": {

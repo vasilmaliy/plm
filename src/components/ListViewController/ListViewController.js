@@ -8,11 +8,12 @@ import {
   ScrollView,
 } from "react-native";
 import Book from "../Book/Book";
-import data from './BooksList'
+import data from './BooksList.json'
 
 const ListViewController = () => {
 
-  const [books, setBooks] = useState(data)
+  const [books, setBooks] = useState(data.books)
+
 
   return (
     <SafeAreaView style={styles.container}>
